@@ -38,3 +38,7 @@ object nibbles {
 }
 
 // Inventar otro ratón
+
+object perez {
+  method peso() = 50
+}

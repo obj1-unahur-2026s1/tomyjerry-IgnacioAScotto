@@ -57,4 +57,18 @@ describe "Test de Jerry" {
     tom.correr(38)
     assert.equals(24, tom.velocidadMaxima())
   }
+
+  test "Tom puede cazar a Jerry a 1 metro" {
+    assert.that(tom.puedeCazarRatonA(1))
+  }
+
+  test "Tom NO puede cazar a un raton a 100 metros " {
+    assert.notThat(tom.puedeCazarRatonA(100))
+  }
+}
+
+describe "Test de Nuevo raton" {
+  test "Perez pesa 50" {
+    assert.equals(50, perez.peso())
+  }
 }
