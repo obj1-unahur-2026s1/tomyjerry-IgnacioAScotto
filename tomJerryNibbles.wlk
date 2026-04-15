@@ -10,6 +10,17 @@ object tom {
     method comer(raton) {
         energia += 12 + raton.peso()
     }
+
+    method puedeCazarRatonA(distancia) {
+        return distancia/2 < energia
+    }
+
+    method cazar(raton, distancia) {
+        if (self.puedeCazarRatonA(distancia)) {
+            self.correr(distancia)
+            self.comer(raton)
+        }
+    }
 }
 
 object jerry {
